@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-image: linear-gradient(45deg,#e0f7fa, #b2ebf2, #4dd0e1,#00897b,#0B2E33 );
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .navbar {
+            background-color: #0B2E33;
+            padding: 10px 20px;
+            font-family: fantasy;
+            font-weight: bolder;
+            text-align: right;
+            font-size: 27px;
+            text-shadow: 2px 2px #000;
+            position: fixed;
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            z-index: 1000;
+            border-bottom: 7px solid  #495556;
+            align-items: center;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-family:  Montserrat;
+            font-weight: bolder;
+        }
+        .navbar a:hover {
+            background-color: rgb(128, 221, 218);
+            border-radius: 20px;
+            padding: 10px;
+            color: rgb(69, 173, 126);
+        }
+        .navbar span {
+            float: left;
+            color: #fff;
+            font-family: Algerian, serif;
+            font-size: 50px;
+            font-weight: bolder;
+            width: 73px;
+            height: 73px;
+            background-image: linear-gradient(to right,#97f0d7,#0B2E33);
+            border-radius: 50%;
+
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1521080755838-d2311117f767?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D');
+            min-height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            margin-top: 90px;
+        }
+        .home h1 {
+            font-size: 60px;
+            font-family:  Montserrat;
+            color: #000;
+            font-weight: bolder;
+        }
+        .home h1 span {
+            color: #36454F;
+            font-weight: lighter;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .home h2 {
+            color:#A6C5DD;
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: lighter;
+        }
+        .button{
+            font-weight: bolder;
+            color: #0B2E33;
+            border-style: solid;
+            border-radius: 20px;
+            border-width: 5px;
+            border-color: #0B2E33;
+            text-align: center;
+            height: fit-content;
+            width: fit-content;
+            background-color: #ffffff00;
+            transition: all 0.3s ease;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+
+
+        }
+        .button:hover{
+            font-weight: bolder;
+            background-color: #0B2E33;
+            color: #fff;
+            
+        }
+        .smol {
+            color: #000;
+            font-family: fantasy;
+            font-size: 18px;
+            max-width: 700px;
+            font-weight: lighter;
+        }
+        .box {
+            margin: 50px 10px;
+            border-radius: 20px;
+            background-color: #0b2e3397;
+            padding: 20px;
+        }
+        .box2 {
+            border-radius: 200px;
+            background-color: rgba(171, 169, 166, 0.671);
+            float: left;
+            padding: 20px;
+            margin: 10px;
+        }
+        .box2 img {
+            border-radius: 200px;
+        }
+        h1.section-title {
+            font-family: Algerian, serif;
+            font-weight: bolder;
+            font-size: 50px;
+            text-shadow: 2px 2px whitesmoke;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        li {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <pre><span>My Portfolio</span>          <a href="#about">About me</a> <a href="#skills">My skills</a> <a href="#achievements">My achievements</a> <a href="#contact">Contact</a>   
+    </pre>
+    </nav>
+    <section class="hero">
+        <div class="home">
+            <h1>Hi, I'm <span>Susmit Sawant</span></h1>
+            <h2>Frontend Developer</h2>
+            <p class="smol">
+                I enjoy creating clean, functional, and visually appealing projects that not only look good but also solve real problems. 
+                Whether it’s building websites, designing user interfaces, or exploring new tools, I’m always eager to learn and grow. 
+                Outside of work, I love photography, gaming, and traveling, which inspires my creativity and helps me bring fresh perspectives to my projects.
+            </p>
+            <button class="button">
+            <h3>Hire me</h3>
+        </button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="box">
+            <div class="box2">
+                <img src="https://galaxypfp.com/wp-content/uploads/2025/10/cute-cat-pfp-anime.webp" height="200" alt="Profile Picture">
+            </div>
+            <h1 class="section-title">👨‍💻 About Me</h1>
+            <p>Hello! My name is Susmit Sawant, and I’m passionate about turning ideas into reality through design and technology.</p>
+            <p>I enjoy creating clean, functional, and visually appealing projects that not only look good but also solve real problems. Outside of work, I love photography, gaming, and traveling, which inspire my creativity and help me bring fresh perspectives to my projects.</p>
+            <p>Beyond my professional interests, I’m deeply inspired by everyday experiences. Whether it’s exploring new places, diving into photography, gaming, or simply reading a good book, I find that these hobbies fuel my imagination and give me fresh perspectives.</p>
+            <p>My goal is to keep growing, both as a professional and as a person. I want to contribute to projects that make a difference, collaborate with people who share the same drive, and continue to challenge myself with new ideas.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="box">
+            <h1 class="section-title">💻 My Skills</h1>
+            <p>I have a strong foundation in front-end web development and a growing passion for creating responsive, user-friendly interfaces.</p>
+            <ol>
+                <li>Technical Skills</li>
+                <ul>
+                    <li>HTML5 – Creating well-structured, semantic web pages</li>
+                    <li>CSS – Designing responsive layouts using Flexbox, Grid, and modern styling techniques</li>
+                    <li>Responsive Design – Ensuring websites work smoothly across all devices</li>
+                    <li>JavaScript – Adding interactivity and dynamic content</li>
+                    <li>Basic UI/UX Principles – Clean design, readability, and user experience</li>
+                </ul>
+                <li>Tools & Technologies</li>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Git & GitHub (basic version control)</li>
+                    <li>Browser Developer Tools</li>
+                </ul>
+                <li>Soft Skills</li>
+                <ul>
+                    <li>Problem-solving mindset</li>
+                    <li>Attention to detail</li>
+                    <li>Willingness to learn new technologies</li>
+                    <li>Good communication and teamwork</li>
+                </ul>
+            </ol>
+        </div>
+    </section>
+
+    <section id="achievements"> <div class="box"> <h1 class="section-title">🏆 My Achievements</h1> <ul> <li>✨ Built and deployed multiple responsive websites using HTML, CSS, and JavaScript, improving usability and design consistency.</li> <li>🚀 Completed several personal projects including a portfolio site, a to-do list app, and a responsive landing page.</li> <li>📚 Earned certifications in Frontend Development and Web Design fundamentals, strengthening my technical foundation.</li> <li>🤝 Collaborated on group projects, contributing to UI/UX design and ensuring smooth teamwork and communication.</li> <li>🌍 Participated in online hackathons and coding challenges, gaining hands-on experience and sharpening problem-solving skills.</li> <li>📸 Integrated my passion for photography into design projects, creating visually appealing layouts inspired by real-world creativity.</li> </ul> <p>These achievements reflect my journey as a developer — each project, challenge, and collaboration has helped me grow both technically and personally. I’m excited to keep pushing boundaries and adding more milestones to this list.</p> </div> </section>
+
+    <section id="contact">
+        <div class="box">
+            <h1 class="section-title">📬 Contact</h1>
+            <p>Email: susmit@example.com</p>
+            <p>GitHub: github.com/susmit</p>
+            <p>LinkedIn: linkedin.com/in/susmit</p>
+        </div>
+    </section>
+</body>
+</html>
