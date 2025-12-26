@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Portfolio</title>
     <style>
         body {
@@ -16,7 +14,7 @@
             font-weight: bolder;
             text-align: right;
             font-size: 27px;
-            text-shadow: 2px 2px #000;
+            text-shadow: 2px 2px #fff;
             position: fixed;
             top: 0; 
             left: 0; 
@@ -24,6 +22,7 @@
             z-index: 1000;
             border-bottom: 7px solid  #495556;
             align-items: center;
+            transition: all 0.3s ease;
         }
         .navbar a {
             text-decoration: none;
@@ -31,12 +30,16 @@
             margin: 0 10px;
             font-family:  Montserrat;
             font-weight: bolder;
+            text-shadow: none;
         }
         .navbar a:hover {
             background-color: rgb(128, 221, 218);
             border-radius: 20px;
             padding: 10px;
-            color: rgb(69, 173, 126);
+            color: #0B2E33;
+            transition: all 0.3s ease;
+            text-shadow: none;
+            text-shadow: none;
         }
         .navbar span {
             float: left;
@@ -48,7 +51,6 @@
             height: 73px;
             background-image: linear-gradient(to right,#97f0d7,#0B2E33);
             border-radius: 50%;
-
         }
         .hero {
             background-image: url('https://images.unsplash.com/photo-1521080755838-d2311117f767?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D');
@@ -63,16 +65,17 @@
         .home h1 {
             font-size: 60px;
             font-family:  Montserrat;
-            color: #000;
+            color: #fff;
             font-weight: bolder;
         }
         .home h1 span {
-            color: #36454F;
+            color:  #36454F;
             font-weight: lighter;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: none;
         }
         .home h2 {
-            color:#A6C5DD;
+            color: #458b8b;
             font-size: 40px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-weight: lighter;
@@ -90,17 +93,15 @@
             background-color: #ffffff00;
             transition: all 0.3s ease;
             box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-
-
         }
         .button:hover{
             font-weight: bolder;
             background-color: #0B2E33;
             color: #fff;
-            
+            transform: scale(1.1);
         }
         .smol {
-            color: #000;
+            color: #fff;
             font-family: fantasy;
             font-size: 18px;
             max-width: 700px;
@@ -109,8 +110,12 @@
         .box {
             margin: 50px 10px;
             border-radius: 20px;
-            background-color: #0b2e3397;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.24),rgba(187, 187, 187, 0.397),rgba(75, 74, 74, 0.473));
             padding: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 5px 5px  #0B2E33;
         }
         .box2 {
             border-radius: 200px;
@@ -141,6 +146,25 @@
             font-size: 20px;
             color: black;
         }
+        section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease;
+        }
+        section.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.animate.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
     </style>
 </head>
 <body>
@@ -163,7 +187,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="animate">
         <div class="box">
             <div class="box2">
                 <img src="https://galaxypfp.com/wp-content/uploads/2025/10/cute-cat-pfp-anime.webp" height="200" alt="Profile Picture">
@@ -176,7 +200,7 @@
         </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="animate">
         <div class="box">
             <h1 class="section-title">💻 My Skills</h1>
             <p>I have a strong foundation in front-end web development and a growing passion for creating responsive, user-friendly interfaces.</p>
@@ -206,8 +230,20 @@
         </div>
     </section>
 
-    <section id="achievements"> <div class="box"> <h1 class="section-title">🏆 My Achievements</h1> <ul> <li>✨ Built and deployed multiple responsive websites using HTML, CSS, and JavaScript, improving usability and design consistency.</li> <li>🚀 Completed several personal projects including a portfolio site, a to-do list app, and a responsive landing page.</li> <li>📚 Earned certifications in Frontend Development and Web Design fundamentals, strengthening my technical foundation.</li> <li>🤝 Collaborated on group projects, contributing to UI/UX design and ensuring smooth teamwork and communication.</li> <li>🌍 Participated in online hackathons and coding challenges, gaining hands-on experience and sharpening problem-solving skills.</li> <li>📸 Integrated my passion for photography into design projects, creating visually appealing layouts inspired by real-world creativity.</li> </ul> <p>These achievements reflect my journey as a developer — each project, challenge, and collaboration has helped me grow both technically and personally. I’m excited to keep pushing boundaries and adding more milestones to this list.</p> </div> </section>
-
+    <section id="achievements" class="animate">
+        <div class="box">
+            <h1 class="section-title">🏆 My Achievements</h1>
+            <ul>
+                <li>✨ Built and deployed multiple responsive websites using HTML, CSS, and JavaScript, improving usability and design consistency.</li>
+                <li>🚀 Completed several personal projects including a portfolio site, a to-do list app, and a responsive landing page.</li>
+                <li>📚 Earned certifications in Frontend Development and Web Design fundamentals, strengthening my technical foundation.</li>
+                <li>🤝 Collaborated on group projects, contributing to UI/UX design and ensuring smooth teamwork and communication.</li>
+                <li>🌍 Participated in online hackathons and coding challenges, gaining hands-on experience and sharpening problem-solving skills.</li>
+                <li>📸 Integrated my passion for photography into design projects, creating visually appealing layouts inspired by real-world creativity.</li>
+            </ul>
+            <p>These achievements reflect my journey as a developer — each project, challenge, and collaboration has helped me grow both technically and personally. I’m excited to keep pushing boundaries and adding more milestones to this list.</p>
+        </div>
+    </section>
     <section id="contact">
         <div class="box">
             <h1 class="section-title">📬 Contact</h1>
@@ -216,5 +252,45 @@
             <p>LinkedIn: linkedin.com/in/susmit</p>
         </div>
     </section>
+
+    <!-- JavaScript Animations -->
+    <script>
+        
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href'))
+                    .scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = "#00897b";
+                navbar.style.fontSize = "22px";
+            } else {
+                navbar.style.backgroundColor = "#0B2E33";
+                navbar.style.fontSize = "27px";
+            }
+        });
+    </script>
 </body>
 </html>
+
+
